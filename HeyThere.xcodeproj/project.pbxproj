@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,15 @@
 		B147CAF0234FB3B9009DF2F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B147CAEE234FB3B9009DF2F9 /* LaunchScreen.storyboard */; };
 		B147CAFB234FB3BA009DF2F9 /* HeyThereTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B147CAFA234FB3BA009DF2F9 /* HeyThereTests.swift */; };
 		B147CB06234FB3BA009DF2F9 /* HeyThereUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B147CB05234FB3BA009DF2F9 /* HeyThereUITests.swift */; };
+		B147CB19234FB45B009DF2F9 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B147CB17234FB45B009DF2F9 /* ChatViewController.swift */; };
+		B147CB1A234FB45B009DF2F9 /* ChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B147CB18234FB45B009DF2F9 /* ChatViewController.xib */; };
+		B147CB1D234FB46C009DF2F9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B147CB1B234FB46C009DF2F9 /* LoginViewController.swift */; };
+		B147CB1E234FB46C009DF2F9 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B147CB1C234FB46C009DF2F9 /* LoginViewController.xib */; };
+		B147CB20234FB47C009DF2F9 /* ChatRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B147CB1F234FB47C009DF2F9 /* ChatRoomViewController.swift */; };
+		B147CB22234FB6F3009DF2F9 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = B147CB21234FB6F3009DF2F9 /* Message.swift */; };
+		F45E35A692F965FEE2628888 /* Pods_HeyThereTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA9538C32D6B832708BD0973 /* Pods_HeyThereTests.framework */; };
+		F56E2B451A62896E7371E389 /* Pods_HeyThere.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4926730252666A5E1F04490B /* Pods_HeyThere.framework */; };
+		F8771E3A782B265B8B1EBB91 /* Pods_HeyThereUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4735CF2660C0818CB24B63B /* Pods_HeyThereUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +44,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C16288D3E0A30620613BDC9 /* Pods-HeyThereTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeyThereTests.debug.xcconfig"; path = "Target Support Files/Pods-HeyThereTests/Pods-HeyThereTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1100F371F15B7B65155CD84B /* Pods-HeyThere.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeyThere.release.xcconfig"; path = "Target Support Files/Pods-HeyThere/Pods-HeyThere.release.xcconfig"; sourceTree = "<group>"; };
+		123ED9AC7B8E3C117554B470 /* Pods-HeyThereUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeyThereUITests.debug.xcconfig"; path = "Target Support Files/Pods-HeyThereUITests/Pods-HeyThereUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4926730252666A5E1F04490B /* Pods_HeyThere.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HeyThere.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		892581FC5367DA91F6AF9852 /* Pods-HeyThereUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeyThereUITests.release.xcconfig"; path = "Target Support Files/Pods-HeyThereUITests/Pods-HeyThereUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B147CAE0234FB3B7009DF2F9 /* HeyThere.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeyThere.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B147CAE3234FB3B7009DF2F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B147CAE5234FB3B7009DF2F9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +63,16 @@
 		B147CB01234FB3BA009DF2F9 /* HeyThereUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeyThereUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B147CB05234FB3BA009DF2F9 /* HeyThereUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeyThereUITests.swift; sourceTree = "<group>"; };
 		B147CB07234FB3BA009DF2F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B147CB17234FB45B009DF2F9 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		B147CB18234FB45B009DF2F9 /* ChatViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatViewController.xib; sourceTree = "<group>"; };
+		B147CB1B234FB46C009DF2F9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B147CB1C234FB46C009DF2F9 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		B147CB1F234FB47C009DF2F9 /* ChatRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomViewController.swift; sourceTree = "<group>"; };
+		B147CB21234FB6F3009DF2F9 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		B2B270BEFA5E70FE0C159F16 /* Pods-HeyThere.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeyThere.debug.xcconfig"; path = "Target Support Files/Pods-HeyThere/Pods-HeyThere.debug.xcconfig"; sourceTree = "<group>"; };
+		D4735CF2660C0818CB24B63B /* Pods_HeyThereUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HeyThereUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA043AB513B925CF58102FFB /* Pods-HeyThereTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeyThereTests.release.xcconfig"; path = "Target Support Files/Pods-HeyThereTests/Pods-HeyThereTests.release.xcconfig"; sourceTree = "<group>"; };
+		FA9538C32D6B832708BD0973 /* Pods_HeyThereTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HeyThereTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F56E2B451A62896E7371E389 /* Pods_HeyThere.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F45E35A692F965FEE2628888 /* Pods_HeyThereTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +96,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8771E3A782B265B8B1EBB91 /* Pods_HeyThereUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		08DE4D1F426D303336089E13 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4926730252666A5E1F04490B /* Pods_HeyThere.framework */,
+				FA9538C32D6B832708BD0973 /* Pods_HeyThereTests.framework */,
+				D4735CF2660C0818CB24B63B /* Pods_HeyThereUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1E3730CDF14AC3FFB8B87926 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B2B270BEFA5E70FE0C159F16 /* Pods-HeyThere.debug.xcconfig */,
+				1100F371F15B7B65155CD84B /* Pods-HeyThere.release.xcconfig */,
+				0C16288D3E0A30620613BDC9 /* Pods-HeyThereTests.debug.xcconfig */,
+				FA043AB513B925CF58102FFB /* Pods-HeyThereTests.release.xcconfig */,
+				123ED9AC7B8E3C117554B470 /* Pods-HeyThereUITests.debug.xcconfig */,
+				892581FC5367DA91F6AF9852 /* Pods-HeyThereUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		B147CAD7234FB3B7009DF2F9 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +133,8 @@
 				B147CAF9234FB3BA009DF2F9 /* HeyThereTests */,
 				B147CB04234FB3BA009DF2F9 /* HeyThereUITests */,
 				B147CAE1234FB3B7009DF2F9 /* Products */,
+				1E3730CDF14AC3FFB8B87926 /* Pods */,
+				08DE4D1F426D303336089E13 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +151,7 @@
 		B147CAE2234FB3B7009DF2F9 /* HeyThere */ = {
 			isa = PBXGroup;
 			children = (
+				B147CB13234FB3F5009DF2F9 /* View Controllers */,
 				B147CAE3234FB3B7009DF2F9 /* AppDelegate.swift */,
 				B147CAE5234FB3B7009DF2F9 /* SceneDelegate.swift */,
 				B147CAE7234FB3B7009DF2F9 /* ContentView.swift */,
@@ -106,6 +159,7 @@
 				B147CAEE234FB3B9009DF2F9 /* LaunchScreen.storyboard */,
 				B147CAF1234FB3B9009DF2F9 /* Info.plist */,
 				B147CAEB234FB3B9009DF2F9 /* Preview Content */,
+				B147CB21234FB6F3009DF2F9 /* Message.swift */,
 			);
 			path = HeyThere;
 			sourceTree = "<group>";
@@ -136,6 +190,42 @@
 			path = HeyThereUITests;
 			sourceTree = "<group>";
 		};
+		B147CB13234FB3F5009DF2F9 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B147CB16234FB41D009DF2F9 /* ChatRoom */,
+				B147CB15234FB417009DF2F9 /* Login */,
+				B147CB14234FB40E009DF2F9 /* Chat */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		B147CB14234FB40E009DF2F9 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				B147CB17234FB45B009DF2F9 /* ChatViewController.swift */,
+				B147CB18234FB45B009DF2F9 /* ChatViewController.xib */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		B147CB15234FB417009DF2F9 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				B147CB1B234FB46C009DF2F9 /* LoginViewController.swift */,
+				B147CB1C234FB46C009DF2F9 /* LoginViewController.xib */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		B147CB16234FB41D009DF2F9 /* ChatRoom */ = {
+			isa = PBXGroup;
+			children = (
+				B147CB1F234FB47C009DF2F9 /* ChatRoomViewController.swift */,
+			);
+			path = ChatRoom;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,9 +233,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B147CB0A234FB3BA009DF2F9 /* Build configuration list for PBXNativeTarget "HeyThere" */;
 			buildPhases = (
+				7F2B99AC9DCCE0B5562B9DD6 /* [CP] Check Pods Manifest.lock */,
 				B147CADC234FB3B7009DF2F9 /* Sources */,
 				B147CADD234FB3B7009DF2F9 /* Frameworks */,
 				B147CADE234FB3B7009DF2F9 /* Resources */,
+				765D99D5C3C6AC9CD9DBDC33 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -160,6 +252,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B147CB0D234FB3BA009DF2F9 /* Build configuration list for PBXNativeTarget "HeyThereTests" */;
 			buildPhases = (
+				512054B3AAA77C242C57DEA2 /* [CP] Check Pods Manifest.lock */,
 				B147CAF2234FB3BA009DF2F9 /* Sources */,
 				B147CAF3234FB3BA009DF2F9 /* Frameworks */,
 				B147CAF4234FB3BA009DF2F9 /* Resources */,
@@ -178,6 +271,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B147CB10234FB3BA009DF2F9 /* Build configuration list for PBXNativeTarget "HeyThereUITests" */;
 			buildPhases = (
+				D62AEBB452640B0705558464 /* [CP] Check Pods Manifest.lock */,
 				B147CAFD234FB3BA009DF2F9 /* Sources */,
 				B147CAFE234FB3BA009DF2F9 /* Frameworks */,
 				B147CAFF234FB3BA009DF2F9 /* Resources */,
@@ -240,8 +334,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B147CB1E234FB46C009DF2F9 /* LoginViewController.xib in Resources */,
 				B147CAF0234FB3B9009DF2F9 /* LaunchScreen.storyboard in Resources */,
 				B147CAED234FB3B9009DF2F9 /* Preview Assets.xcassets in Resources */,
+				B147CB1A234FB45B009DF2F9 /* ChatViewController.xib in Resources */,
 				B147CAEA234FB3B9009DF2F9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,6 +358,92 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		512054B3AAA77C242C57DEA2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HeyThereTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		765D99D5C3C6AC9CD9DBDC33 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HeyThere/Pods-HeyThere-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HeyThere/Pods-HeyThere-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HeyThere/Pods-HeyThere-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F2B99AC9DCCE0B5562B9DD6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HeyThere-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D62AEBB452640B0705558464 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HeyThereUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B147CADC234FB3B7009DF2F9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -269,7 +451,11 @@
 			files = (
 				B147CAE4234FB3B7009DF2F9 /* AppDelegate.swift in Sources */,
 				B147CAE6234FB3B7009DF2F9 /* SceneDelegate.swift in Sources */,
+				B147CB19234FB45B009DF2F9 /* ChatViewController.swift in Sources */,
+				B147CB1D234FB46C009DF2F9 /* LoginViewController.swift in Sources */,
 				B147CAE8234FB3B7009DF2F9 /* ContentView.swift in Sources */,
+				B147CB20234FB47C009DF2F9 /* ChatRoomViewController.swift in Sources */,
+				B147CB22234FB6F3009DF2F9 /* Message.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +618,7 @@
 		};
 		B147CB0B234FB3BA009DF2F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2B270BEFA5E70FE0C159F16 /* Pods-HeyThere.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -452,6 +639,7 @@
 		};
 		B147CB0C234FB3BA009DF2F9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1100F371F15B7B65155CD84B /* Pods-HeyThere.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -472,6 +660,7 @@
 		};
 		B147CB0E234FB3BA009DF2F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C16288D3E0A30620613BDC9 /* Pods-HeyThereTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -494,6 +683,7 @@
 		};
 		B147CB0F234FB3BA009DF2F9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA043AB513B925CF58102FFB /* Pods-HeyThereTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -516,6 +706,7 @@
 		};
 		B147CB11234FB3BA009DF2F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 123ED9AC7B8E3C117554B470 /* Pods-HeyThereUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -536,6 +727,7 @@
 		};
 		B147CB12234FB3BA009DF2F9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 892581FC5367DA91F6AF9852 /* Pods-HeyThereUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

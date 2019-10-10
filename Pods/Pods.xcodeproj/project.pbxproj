@@ -1,0 +1,1285 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0AF9926F3183C9D89D2D3A60DC9D3997 /* Pods-HeyThere-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B778716F2C3EFC6F6B54FF05E54BC8A /* Pods-HeyThere-dummy.m */; };
+		11FD777658D285B5DBCAD74971D969E0 /* MessageKitAssets.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D96170E673391D43B16AE39E7B2E3C33 /* MessageKitAssets.bundle */; };
+		11FEC7CC91DBA4BBBC334F3D79C1EA7F /* LocationMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D04567F7B20D94F4B96C70E627C036 /* LocationMessageCell.swift */; };
+		168D306566379ABF410DD142AD83F297 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		17B5A86A90569553A8A56710A6137110 /* LocationMessageSnapshotOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E3B702DAD2276D95DEBC79ABE403B5 /* LocationMessageSnapshotOptions.swift */; };
+		186F90A5E3814EA338CB06B75FBBF321 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09438649F43DE7A84D496A4675C70E6A /* MessagesViewController.swift */; };
+		1913A38D89307EFF07A928D799A478B3 /* Pods-HeyThereUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A33EA384EF4457248A836F244A63DDC /* Pods-HeyThereUITests-dummy.m */; };
+		1A8E742AEA52A5A9CB2F3EBFAECAEE8F /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B94B33E7F1401569990064CAEF5186 /* AvatarView.swift */; };
+		2D5FD8CCE7C3C00B2CE8F934EC710B5E /* Pods-HeyThereUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 561D922FBA69230539BED1C052A06643 /* Pods-HeyThereUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2D847B77B0F7A33E0FCBDEFF5860917D /* CGRect+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF431634DA709AF383E71F70DCDADF9 /* CGRect+Extensions.swift */; };
+		2F1BB586ADCEC4D252929A9B7E1E5B7C /* Pods-HeyThere-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C286453E829AAB1FAD55159677599B7B /* Pods-HeyThere-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		305A8FEFD0D6178932520C2222937019 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		31158B2399A840A56B519E8817F397FB /* MessageKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C641F9DD602BC435D07BD015FCCB557A /* MessageKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		31CE525D6CEEDC7C15F02FF6DFC094BC /* NSConstraintLayoutSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11E30511E80461195F026FAFC40D7F8 /* NSConstraintLayoutSet.swift */; };
+		35740381735274723A99E8980672AD28 /* MessageSizeCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB9D4ABE943DA78F1B15C1B0DE2467B /* MessageSizeCalculator.swift */; };
+		375E2BC5797921B4E5E6D02D143CDF4B /* SeparatorLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12FA3DE269DC5F37EBEC363701EE2C5 /* SeparatorLine.swift */; };
+		3A7FC20D51E8C1B03B63B687EAB978FB /* MessageKit+Availability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F6E15304C523CACF95FCD05F04CC33 /* MessageKit+Availability.swift */; };
+		3F6471B22A184EDC18A202295A0CF879 /* UIEdgeInsets+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335013E3F739DD6DF3F3A0FADC082ECA /* UIEdgeInsets+Extensions.swift */; };
+		4233FFEBCEF3EA69F727F2952572FE76 /* InputTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9C58D4A63C0A433DAA0CD572A66ACC /* InputTextView.swift */; };
+		43907A866FCA9F3677A7843B86556463 /* MessageLabelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC008F0138ED21611353615E56341BAA /* MessageLabelDelegate.swift */; };
+		43BF39CC22993F4A1B36B82DEDB60239 /* InsetLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF00AE45444749AF33438911F68F86B9 /* InsetLabel.swift */; };
+		4DCFC07F57DD548CF6EA50205CE72679 /* MessageCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A385B6F32A01E7DAE53293702CE6210E /* MessageCellDelegate.swift */; };
+		50DD889E5E8E0D59E8B8911F042F1B27 /* MediaMessageSizeCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B530300A2809DCB414EE57C45F51F0A9 /* MediaMessageSizeCalculator.swift */; };
+		554382AA3FE616F43A1D5884B4B88A28 /* TextMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D83BBEDDD34EFEDD1B6AFE175A09DB /* TextMessageCell.swift */; };
+		564BBEEE9BFBC87BD9C15C3680D64EBA /* MessageKitDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79675442220487EE191565D2FE88B86F /* MessageKitDateFormatter.swift */; };
+		5804FD194F264BB0063140F58D2EDE50 /* DetectorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D19D17F54CF0BF2F2C9DAE8E01DC0FC /* DetectorType.swift */; };
+		59CC0B0C263EE7571F6CBC4B4CF57AF9 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D2395C06381098DC96981B608F9A2E /* UIColor+Extensions.swift */; };
+		5A73EEECFB699E1E9EBFEB1FDE8C5CA1 /* LabelAlignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1844F3A0AF30E9678CDBC680D4EDD3 /* LabelAlignment.swift */; };
+		616851ABD2D0FD4D71392F104B1DC4C1 /* MessagesCollectionViewLayoutAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471E4AEC5D4D367D64B8445F65C2DC9A /* MessagesCollectionViewLayoutAttributes.swift */; };
+		666F7F1997D286CA6E4BD7E544528B74 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		67045AA7D72F2EE1F8528777E942B6F4 /* Sender.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE37141031C63F0773462934F62F86AE /* Sender.swift */; };
+		7029A9230854B6AA5106D7E9FBB3557F /* InputBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790C76E5590A0CD213534C468767DD35 /* InputBarItem.swift */; };
+		70B2884AEC6124AFB51909F7ED088A41 /* InputStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D852D8471BD695FE08E68C2DE43714BF /* InputStackView.swift */; };
+		71C44689E15DD1A6F67B53F5C63A0A73 /* MessageReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E479326DC2DD15DF667D60F4CFAF24E1 /* MessageReusableView.swift */; };
+		742BDDFCBE92D809B60D939AA24F099D /* CellSizeCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB394E9B105CE829A683D03E7B5B8C2 /* CellSizeCalculator.swift */; };
+		764B32895B2AA62CE6F82807F3DD2279 /* MessagesViewController+Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261698BC8A6941BAC2F79CFA5F5CB5A0 /* MessagesViewController+Keyboard.swift */; };
+		79052B844571044056AFA01CC48DA4A0 /* MediaItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696A13535EAA0C2C6125BFA2F7BCC6C8 /* MediaItem.swift */; };
+		7EFCFE1D72F795362F0FE36E7561C607 /* MessageKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D87FDDC2956ECA4D878538FF70B76F0 /* MessageKind.swift */; };
+		81AECB0270489425CCE8B9725D469DDA /* MessageKitError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F9A0835B419D72FF4FDF6A7182A612 /* MessageKitError.swift */; };
+		84E1A6ABCA0F5350F7E05F1CCA94EEB5 /* MessageLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8765E0DFF398C3FF635B587F3DC2A241 /* MessageLabel.swift */; };
+		87EC1A62E520AD90B15D447FE6984688 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BB21DEE6DC04FE68C28AA3DC97D8D1 /* UIView+Extensions.swift */; };
+		90EDC601E8A181514D454C67B71EF852 /* MessagesCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E13D82B101F65FC2FC015C385950FE2 /* MessagesCollectionViewFlowLayout.swift */; };
+		92CA647E5D8C1105CFF78003F25097B4 /* LocationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99D22E41B660CA2F502E10FD5E3CB33 /* LocationItem.swift */; };
+		A13B19DE719038E734E8F5D5B0396DB3 /* MessageContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2285B8240B75F7AAC980608648565D /* MessageContentCell.swift */; };
+		A1C4A1389990EDED255FE7EF7A62756B /* MediaMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8385E0F6E98076C45B5A32CACC1D192 /* MediaMessageCell.swift */; };
+		A4207FD10528CE2EB1B6A80F1AC947B2 /* MessageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B9BC5923A1271BB866E278233B723C /* MessageType.swift */; };
+		A4440D2B7654FB038085C1BF800D3630 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		B2F1142774BD8CFCAA9264055441CE8B /* AvatarPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD8DD36A66864A549C10515F4DF76CB /* AvatarPosition.swift */; };
+		C124EEC7442A90B5166EDC14DCADD598 /* Pods-HeyThereTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DF74B6AEEFECF7A34783992BA19E06C2 /* Pods-HeyThereTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C27190DCB77EAE9C77B21F2E2E760313 /* NSAttributedString+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2B4E5B6F5D8C66189E96D87679A230 /* NSAttributedString+Extensions.swift */; };
+		C741E78E74CC2AD4472F44C4D8C4C6FA /* Pods-HeyThereTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8312CA73DD73E4B8F618632D98169E27 /* Pods-HeyThereTests-dummy.m */; };
+		C7426BC67487F096343D9889523F7F35 /* MessagesCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD4AC6650DAD9E55A017ACB382D39CB /* MessagesCollectionView.swift */; };
+		CDA8E6F1993F3B8DF7C63C37D5C271B2 /* MessageInputBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BB07CDA3E4AC6F86CB7D56A9102D2D /* MessageInputBar.swift */; };
+		D3F5021F8263B99EC6C6F2E1B64D2497 /* MessagesDisplayDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BA8ADBE828CB7B481A485A70049E29 /* MessagesDisplayDelegate.swift */; };
+		D5750E8BF6501D63CC0C01AA9BD0F7B0 /* MessageStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42697A817036BD00CEFA79391412CB8 /* MessageStyle.swift */; };
+		D59C59D2F932067D341128F0DAB81401 /* MessagesViewController+Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980F811024D8898686FFB3ECD275FE95 /* MessagesViewController+Menu.swift */; };
+		D866815D4DD5976F6ED7B4D10B73A910 /* MessageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BB757A28D05C0B1909800965FA6B77 /* MessageCollectionViewCell.swift */; };
+		E49AF9F3D96741E6DCE67C313C5424ED /* Images in Resources */ = {isa = PBXBuildFile; fileRef = 902C56E940E4A71089C95B7648672437 /* Images */; };
+		E6CE3E8E99B802C347F997A12DBD71F7 /* PlayButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF8F2EEB74301D49AC4A94FC119F667 /* PlayButtonView.swift */; };
+		E7B881D9A1910980F5A5641FA605C766 /* TextMessageSizeCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCAEDE661C910A79DD58F1F99BEC22A /* TextMessageSizeCalculator.swift */; };
+		E7CE2ECD7A5022498B674A9F79275CDA /* MessageContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094C242AAEA8743E60AACA1E6171513B /* MessageContainerView.swift */; };
+		EB5D7FE2008A2964422D0EC66E492780 /* MessagesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7CC0910C9408FAD2F1EB4693EFBCC0 /* MessagesDataSource.swift */; };
+		EF7725D39E3D4A062F36B8E61E661A05 /* MessageKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B63853B36EA9A68E5A797212333F2139 /* MessageKit-dummy.m */; };
+		F025D41E4CB2C3B08E9AE2FFA62923C1 /* Avatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C853496B6A1C8E746E3FE7542EBA7EA /* Avatar.swift */; };
+		F250A25F99B489FFA570F775451FFF76 /* MessageInputBarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4ED13B69AEB76D13472A885DFE3439F /* MessageInputBarDelegate.swift */; };
+		F6887D8399838F0C011075971BAA985C /* Bundle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF253F1B0BCF2B71F278BF767735EBF /* Bundle+Extensions.swift */; };
+		F967419D8EDB333D9066A22FC0E920EE /* LocationMessageSizeCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAA7ED003B6FFB0A862A5CB55900433 /* LocationMessageSizeCalculator.swift */; };
+		FFB55BC707BDFAFEB0ADA7EFD30DA570 /* MessagesLayoutDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4563D34A1E91211DAC740CDC5D16C199 /* MessagesLayoutDelegate.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		32ED170350E84DC9DAD7154B9D27E8E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3AFB3BF56265EE8DB3B23F437636260F;
+			remoteInfo = "Pods-HeyThere";
+		};
+		77D56BBC6FE21648AF8A86F3B84232B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2D834CBBD351637528FA6B93E42745DC;
+			remoteInfo = MessageKit;
+		};
+		877681A2784CDF3A631778C3E6416948 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC2A0F6973C1122AEE80B19C4B34D4D6;
+			remoteInfo = "MessageKit-MessageKitAssets";
+		};
+		8FE3964CCA544AE2CE9D06BAA98B1FBA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3AFB3BF56265EE8DB3B23F437636260F;
+			remoteInfo = "Pods-HeyThere";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00BB21DEE6DC04FE68C28AA3DC97D8D1 /* UIView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Extensions.swift"; path = "Sources/Extensions/UIView+Extensions.swift"; sourceTree = "<group>"; };
+		010B86F51D988120DABEADC8B2909FF8 /* Pods-HeyThereTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HeyThereTests-Info.plist"; sourceTree = "<group>"; };
+		01B9BC5923A1271BB866E278233B723C /* MessageType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessageType.swift; path = Sources/Protocols/MessageType.swift; sourceTree = "<group>"; };
+		0884D9A7351754FC9A90428E31905967 /* Pods-HeyThere-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HeyThere-frameworks.sh"; sourceTree = "<group>"; };
+		09438649F43DE7A84D496A4675C70E6A /* MessagesViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessagesViewController.swift; path = Sources/Controllers/MessagesViewController.swift; sourceTree = "<group>"; };
+		094C242AAEA8743E60AACA1E6171513B /* MessageContainerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessageContainerView.swift; path = Sources/Views/MessageContainerView.swift; sourceTree = "<group>"; };
+		0A33EA384EF4457248A836F244A63DDC /* Pods-HeyThereUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HeyThereUITests-dummy.m"; sourceTree = "<group>"; };
+		0A9C58D4A63C0A433DAA0CD572A66ACC /* InputTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InputTextView.swift; path = Sources/Views/InputTextView.swift; sourceTree = "<group>"; };
+		0AB394E9B105CE829A683D03E7B5B8C2 /* CellSizeCalculator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CellSizeCalculator.swift; path = Sources/Layout/CellSizeCalculator.swift; sourceTree = "<group>"; };
+		0BF253F1B0BCF2B71F278BF767735EBF /* Bundle+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bundle+Extensions.swift"; path = "Sources/Extensions/Bundle+Extensions.swift"; sourceTree = "<group>"; };
+		0DCAEDE661C910A79DD58F1F99BEC22A /* TextMessageSizeCalculator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextMessageSizeCalculator.swift; path = Sources/Layout/TextMessageSizeCalculator.swift; sourceTree = "<group>"; };
+		11577A90474DD019AD557EEB00C256AC /* Pods-HeyThereTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HeyThereTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		13B94B33E7F1401569990064CAEF5186 /* AvatarView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AvatarView.swift; path = Sources/Views/AvatarView.swift; sourceTree = "<group>"; };
+		15A68A8F33BD9EB9AFD02465B0418BCF /* MessageKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MessageKit.framework; path = MessageKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		261698BC8A6941BAC2F79CFA5F5CB5A0 /* MessagesViewController+Keyboard.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "MessagesViewController+Keyboard.swift"; path = "Sources/Controllers/MessagesViewController+Keyboard.swift"; sourceTree = "<group>"; };
+		2B778716F2C3EFC6F6B54FF05E54BC8A /* Pods-HeyThere-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HeyThere-dummy.m"; sourceTree = "<group>"; };
+		2C853496B6A1C8E746E3FE7542EBA7EA /* Avatar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Avatar.swift; path = Sources/Models/Avatar.swift; sourceTree = "<group>"; };
+		2EE1CD6E7D818AEDE1966DC61DB99970 /* Pods-HeyThereTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HeyThereTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2EE34BC60AA674D36B1806E7076F4B32 /* Pods-HeyThere.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HeyThere.debug.xcconfig"; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		335013E3F739DD6DF3F3A0FADC082ECA /* UIEdgeInsets+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIEdgeInsets+Extensions.swift"; path = "Sources/Extensions/UIEdgeInsets+Extensions.swift"; sourceTree = "<group>"; };
+		3D87FDDC2956ECA4D878538FF70B76F0 /* MessageKind.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessageKind.swift; path = Sources/Models/MessageKind.swift; sourceTree = "<group>"; };
+		3E36A4DE3F4E9DC430B4DAC806E47AC8 /* Pods-HeyThere-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HeyThere-Info.plist"; sourceTree = "<group>"; };
+		44BB757A28D05C0B1909800965FA6B77 /* MessageCollectionViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessageCollectionViewCell.swift; path = Sources/Views/Cells/MessageCollectionViewCell.swift; sourceTree = "<group>"; };
+		4563D34A1E91211DAC740CDC5D16C199 /* MessagesLayoutDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessagesLayoutDelegate.swift; path = Sources/Protocols/MessagesLayoutDelegate.swift; sourceTree = "<group>"; };
+		46E8E5677572C422186191E914651D69 /* MessageKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MessageKit-Info.plist"; sourceTree = "<group>"; };
+		471E4AEC5D4D367D64B8445F65C2DC9A /* MessagesCollectionViewLayoutAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessagesCollectionViewLayoutAttributes.swift; path = Sources/Layout/MessagesCollectionViewLayoutAttributes.swift; sourceTree = "<group>"; };
+		4AB9D4ABE943DA78F1B15C1B0DE2467B /* MessageSizeCalculator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessageSizeCalculator.swift; path = Sources/Layout/MessageSizeCalculator.swift; sourceTree = "<group>"; };
+		4D2285B8240B75F7AAC980608648565D /* MessageContentCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessageContentCell.swift; path = Sources/Views/Cells/MessageContentCell.swift; sourceTree = "<group>"; };
+		4D2B4E5B6F5D8C66189E96D87679A230 /* NSAttributedString+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSAttributedString+Extensions.swift"; path = "Sources/Extensions/NSAttributedString+Extensions.swift"; sourceTree = "<group>"; };
+		4FF8F2EEB74301D49AC4A94FC119F667 /* PlayButtonView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PlayButtonView.swift; path = Sources/Views/PlayButtonView.swift; sourceTree = "<group>"; };
+		561D922FBA69230539BED1C052A06643 /* Pods-HeyThereUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HeyThereUITests-umbrella.h"; sourceTree = "<group>"; };
+		58D04567F7B20D94F4B96C70E627C036 /* LocationMessageCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocationMessageCell.swift; path = Sources/Views/Cells/LocationMessageCell.swift; sourceTree = "<group>"; };
+		5A35DFFF2CDD5ECD97BD4AE8ED32937A /* Pods-HeyThereUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HeyThereUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5C338E4EB217CE68881EA0F22A01E116 /* Pods_HeyThere.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HeyThere.framework; path = "Pods-HeyThere.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E832B8AD7A653E843032BDD6E4B4D08 /* Pods_HeyThereUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HeyThereUITests.framework; path = "Pods-HeyThereUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FD8DD36A66864A549C10515F4DF76CB /* AvatarPosition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AvatarPosition.swift; path = Sources/Models/AvatarPosition.swift; sourceTree = "<group>"; };
+		5FF610CA13D365CA5D5361C40A9EE823 /* Pods-HeyThereTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HeyThereTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		62D83BBEDDD34EFEDD1B6AFE175A09DB /* TextMessageCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextMessageCell.swift; path = Sources/Views/Cells/TextMessageCell.swift; sourceTree = "<group>"; };
+		64F6E15304C523CACF95FCD05F04CC33 /* MessageKit+Availability.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "MessageKit+Availability.swift"; path = "Sources/Supporting/MessageKit+Availability.swift"; sourceTree = "<group>"; };
+		68BB07CDA3E4AC6F86CB7D56A9102D2D /* MessageInputBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessageInputBar.swift; path = Sources/Views/MessageInputBar.swift; sourceTree = "<group>"; };
+		696A13535EAA0C2C6125BFA2F7BCC6C8 /* MediaItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MediaItem.swift; path = Sources/Protocols/MediaItem.swift; sourceTree = "<group>"; };
+		6A2A5B14A5786833E117C90FFD70F739 /* MessageKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MessageKit-prefix.pch"; sourceTree = "<group>"; };
+		787E5876C3018AEF4EE37530E0C213A3 /* MessageKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MessageKit.xcconfig; sourceTree = "<group>"; };
+		790C76E5590A0CD213534C468767DD35 /* InputBarItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InputBarItem.swift; path = Sources/Views/InputBarItem.swift; sourceTree = "<group>"; };
+		79675442220487EE191565D2FE88B86F /* MessageKitDateFormatter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessageKitDateFormatter.swift; path = Sources/Models/MessageKitDateFormatter.swift; sourceTree = "<group>"; };
+		79BA8ADBE828CB7B481A485A70049E29 /* MessagesDisplayDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessagesDisplayDelegate.swift; path = Sources/Protocols/MessagesDisplayDelegate.swift; sourceTree = "<group>"; };
+		7C5791BA64C1BF153C97E32718B9A343 /* Pods-HeyThere.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HeyThere.modulemap"; sourceTree = "<group>"; };
+		7D19D17F54CF0BF2F2C9DAE8E01DC0FC /* DetectorType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DetectorType.swift; path = Sources/Models/DetectorType.swift; sourceTree = "<group>"; };
+		7DA2122CADD724CEBC29AC1110EB5DDB /* Pods-HeyThereTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HeyThereTests.release.xcconfig"; sourceTree = "<group>"; };
+		7F1844F3A0AF30E9678CDBC680D4EDD3 /* LabelAlignment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LabelAlignment.swift; path = Sources/Models/LabelAlignment.swift; sourceTree = "<group>"; };
+		7FD954088099B76D09AD9FB570BFC0E6 /* MessageKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MessageKit.modulemap; sourceTree = "<group>"; };
+		8312CA73DD73E4B8F618632D98169E27 /* Pods-HeyThereTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HeyThereTests-dummy.m"; sourceTree = "<group>"; };
+		8765E0DFF398C3FF635B587F3DC2A241 /* MessageLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessageLabel.swift; path = Sources/Views/MessageLabel.swift; sourceTree = "<group>"; };
+		89B5A1C5AF4E0420508E817350EE60E7 /* Pods-HeyThere-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HeyThere-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8DAA7ED003B6FFB0A862A5CB55900433 /* LocationMessageSizeCalculator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocationMessageSizeCalculator.swift; path = Sources/Layout/LocationMessageSizeCalculator.swift; sourceTree = "<group>"; };
+		8DF431634DA709AF383E71F70DCDADF9 /* CGRect+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CGRect+Extensions.swift"; path = "Sources/Extensions/CGRect+Extensions.swift"; sourceTree = "<group>"; };
+		902C56E940E4A71089C95B7648672437 /* Images */ = {isa = PBXFileReference; includeInIndex = 1; name = Images; path = Assets/MessageKitAssets.bundle/Images; sourceTree = "<group>"; };
+		9191EB9CE27D2282D903B28326C854FA /* Pods-HeyThereTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HeyThereTests.modulemap"; sourceTree = "<group>"; };
+		93E6C4F784DD96F9389D97B6458BF449 /* Pods-HeyThereUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HeyThereUITests.modulemap"; sourceTree = "<group>"; };
+		980F811024D8898686FFB3ECD275FE95 /* MessagesViewController+Menu.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "MessagesViewController+Menu.swift"; path = "Sources/Controllers/MessagesViewController+Menu.swift"; sourceTree = "<group>"; };
+		9B22B1B597B3571514DAEC90FC939748 /* Pods-HeyThere.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HeyThere.release.xcconfig"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E13D82B101F65FC2FC015C385950FE2 /* MessagesCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessagesCollectionViewFlowLayout.swift; path = Sources/Layout/MessagesCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
+		A112E658EE29E91BD6B5C8D41A0F1A6E /* Pods-HeyThere-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HeyThere-acknowledgements.plist"; sourceTree = "<group>"; };
+		A1F9A0835B419D72FF4FDF6A7182A612 /* MessageKitError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessageKitError.swift; path = Sources/Models/MessageKitError.swift; sourceTree = "<group>"; };
+		A385B6F32A01E7DAE53293702CE6210E /* MessageCellDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessageCellDelegate.swift; path = Sources/Protocols/MessageCellDelegate.swift; sourceTree = "<group>"; };
+		AF00AE45444749AF33438911F68F86B9 /* InsetLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InsetLabel.swift; path = Sources/Views/InsetLabel.swift; sourceTree = "<group>"; };
+		B12FA3DE269DC5F37EBEC363701EE2C5 /* SeparatorLine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SeparatorLine.swift; path = Sources/Views/SeparatorLine.swift; sourceTree = "<group>"; };
+		B530300A2809DCB414EE57C45F51F0A9 /* MediaMessageSizeCalculator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MediaMessageSizeCalculator.swift; path = Sources/Layout/MediaMessageSizeCalculator.swift; sourceTree = "<group>"; };
+		B63853B36EA9A68E5A797212333F2139 /* MessageKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MessageKit-dummy.m"; sourceTree = "<group>"; };
+		BB1FDA62E403C9A15C7537C9F643C19E /* Pods-HeyThereUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HeyThereUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		C11E30511E80461195F026FAFC40D7F8 /* NSConstraintLayoutSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSConstraintLayoutSet.swift; path = Sources/Models/NSConstraintLayoutSet.swift; sourceTree = "<group>"; };
+		C286453E829AAB1FAD55159677599B7B /* Pods-HeyThere-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HeyThere-umbrella.h"; sourceTree = "<group>"; };
+		C2E3B702DAD2276D95DEBC79ABE403B5 /* LocationMessageSnapshotOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocationMessageSnapshotOptions.swift; path = Sources/Models/LocationMessageSnapshotOptions.swift; sourceTree = "<group>"; };
+		C5999F84BD9946E7CE849CE31075C692 /* ResourceBundle-MessageKitAssets-MessageKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-MessageKitAssets-MessageKit-Info.plist"; sourceTree = "<group>"; };
+		C641F9DD602BC435D07BD015FCCB557A /* MessageKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MessageKit-umbrella.h"; sourceTree = "<group>"; };
+		C8385E0F6E98076C45B5A32CACC1D192 /* MediaMessageCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MediaMessageCell.swift; path = Sources/Views/Cells/MediaMessageCell.swift; sourceTree = "<group>"; };
+		CAD4AC6650DAD9E55A017ACB382D39CB /* MessagesCollectionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessagesCollectionView.swift; path = Sources/Views/MessagesCollectionView.swift; sourceTree = "<group>"; };
+		CE37141031C63F0773462934F62F86AE /* Sender.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Sender.swift; path = Sources/Models/Sender.swift; sourceTree = "<group>"; };
+		D40233B0569623053318FB87CD55A0CF /* Pods_HeyThereTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HeyThereTests.framework; path = "Pods-HeyThereTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D486FC0524A4A997083DBBC2A1B1D2D3 /* Pods-HeyThereUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HeyThereUITests-Info.plist"; sourceTree = "<group>"; };
+		D4ED13B69AEB76D13472A885DFE3439F /* MessageInputBarDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessageInputBarDelegate.swift; path = Sources/Protocols/MessageInputBarDelegate.swift; sourceTree = "<group>"; };
+		D852D8471BD695FE08E68C2DE43714BF /* InputStackView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InputStackView.swift; path = Sources/Views/InputStackView.swift; sourceTree = "<group>"; };
+		D96170E673391D43B16AE39E7B2E3C33 /* MessageKitAssets.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = MessageKitAssets.bundle; path = "MessageKit-MessageKitAssets.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD7CC0910C9408FAD2F1EB4693EFBCC0 /* MessagesDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessagesDataSource.swift; path = Sources/Protocols/MessagesDataSource.swift; sourceTree = "<group>"; };
+		DF74B6AEEFECF7A34783992BA19E06C2 /* Pods-HeyThereTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HeyThereTests-umbrella.h"; sourceTree = "<group>"; };
+		E42697A817036BD00CEFA79391412CB8 /* MessageStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessageStyle.swift; path = Sources/Models/MessageStyle.swift; sourceTree = "<group>"; };
+		E479326DC2DD15DF667D60F4CFAF24E1 /* MessageReusableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessageReusableView.swift; path = "Sources/Views/Headers & Footers/MessageReusableView.swift"; sourceTree = "<group>"; };
+		E7D2395C06381098DC96981B608F9A2E /* UIColor+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+Extensions.swift"; path = "Sources/Extensions/UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		EC008F0138ED21611353615E56341BAA /* MessageLabelDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessageLabelDelegate.swift; path = Sources/Protocols/MessageLabelDelegate.swift; sourceTree = "<group>"; };
+		F06AA274684F4F81AFA2C80182DA7306 /* Pods-HeyThereUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HeyThereUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F506A7BE0CB6C92D334D40DCCBC627C2 /* Pods-HeyThereUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HeyThereUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F99D22E41B660CA2F502E10FD5E3CB33 /* LocationItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocationItem.swift; path = Sources/Protocols/LocationItem.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		336A443EF0C7854D510E004CB043C05A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				168D306566379ABF410DD142AD83F297 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74B154CBA69779ECE487859AED290B35 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				305A8FEFD0D6178932520C2222937019 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		910BD8D838A701E0B64C010C68C376B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0736CAAC96A73678F3361B899717BA6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				666F7F1997D286CA6E4BD7E544528B74 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E02A6561B17EC657EC20A12D24CCDD7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4440D2B7654FB038085C1BF800D3630 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		10169C2F4EB86CD0ACDF8ECD1C182711 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				902C56E940E4A71089C95B7648672437 /* Images */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		240FF0A99F80878AB8CA2C0BA3B2050F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7229724524E4B586C8ACAB3767C47EF7 /* MessageKit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		545D0590563CE7BCC150399D8CB70A74 /* Pods-HeyThereUITests */ = {
+			isa = PBXGroup;
+			children = (
+				93E6C4F784DD96F9389D97B6458BF449 /* Pods-HeyThereUITests.modulemap */,
+				5A35DFFF2CDD5ECD97BD4AE8ED32937A /* Pods-HeyThereUITests-acknowledgements.markdown */,
+				BB1FDA62E403C9A15C7537C9F643C19E /* Pods-HeyThereUITests-acknowledgements.plist */,
+				0A33EA384EF4457248A836F244A63DDC /* Pods-HeyThereUITests-dummy.m */,
+				D486FC0524A4A997083DBBC2A1B1D2D3 /* Pods-HeyThereUITests-Info.plist */,
+				561D922FBA69230539BED1C052A06643 /* Pods-HeyThereUITests-umbrella.h */,
+				F506A7BE0CB6C92D334D40DCCBC627C2 /* Pods-HeyThereUITests.debug.xcconfig */,
+				F06AA274684F4F81AFA2C80182DA7306 /* Pods-HeyThereUITests.release.xcconfig */,
+			);
+			name = "Pods-HeyThereUITests";
+			path = "Target Support Files/Pods-HeyThereUITests";
+			sourceTree = "<group>";
+		};
+		702CE8B8E940E3FD0B3639E60FAB458A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7FD954088099B76D09AD9FB570BFC0E6 /* MessageKit.modulemap */,
+				787E5876C3018AEF4EE37530E0C213A3 /* MessageKit.xcconfig */,
+				B63853B36EA9A68E5A797212333F2139 /* MessageKit-dummy.m */,
+				46E8E5677572C422186191E914651D69 /* MessageKit-Info.plist */,
+				6A2A5B14A5786833E117C90FFD70F739 /* MessageKit-prefix.pch */,
+				C641F9DD602BC435D07BD015FCCB557A /* MessageKit-umbrella.h */,
+				C5999F84BD9946E7CE849CE31075C692 /* ResourceBundle-MessageKitAssets-MessageKit-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MessageKit";
+			sourceTree = "<group>";
+		};
+		7229724524E4B586C8ACAB3767C47EF7 /* MessageKit */ = {
+			isa = PBXGroup;
+			children = (
+				2C853496B6A1C8E746E3FE7542EBA7EA /* Avatar.swift */,
+				5FD8DD36A66864A549C10515F4DF76CB /* AvatarPosition.swift */,
+				13B94B33E7F1401569990064CAEF5186 /* AvatarView.swift */,
+				0BF253F1B0BCF2B71F278BF767735EBF /* Bundle+Extensions.swift */,
+				0AB394E9B105CE829A683D03E7B5B8C2 /* CellSizeCalculator.swift */,
+				8DF431634DA709AF383E71F70DCDADF9 /* CGRect+Extensions.swift */,
+				7D19D17F54CF0BF2F2C9DAE8E01DC0FC /* DetectorType.swift */,
+				790C76E5590A0CD213534C468767DD35 /* InputBarItem.swift */,
+				D852D8471BD695FE08E68C2DE43714BF /* InputStackView.swift */,
+				0A9C58D4A63C0A433DAA0CD572A66ACC /* InputTextView.swift */,
+				AF00AE45444749AF33438911F68F86B9 /* InsetLabel.swift */,
+				7F1844F3A0AF30E9678CDBC680D4EDD3 /* LabelAlignment.swift */,
+				F99D22E41B660CA2F502E10FD5E3CB33 /* LocationItem.swift */,
+				58D04567F7B20D94F4B96C70E627C036 /* LocationMessageCell.swift */,
+				8DAA7ED003B6FFB0A862A5CB55900433 /* LocationMessageSizeCalculator.swift */,
+				C2E3B702DAD2276D95DEBC79ABE403B5 /* LocationMessageSnapshotOptions.swift */,
+				696A13535EAA0C2C6125BFA2F7BCC6C8 /* MediaItem.swift */,
+				C8385E0F6E98076C45B5A32CACC1D192 /* MediaMessageCell.swift */,
+				B530300A2809DCB414EE57C45F51F0A9 /* MediaMessageSizeCalculator.swift */,
+				A385B6F32A01E7DAE53293702CE6210E /* MessageCellDelegate.swift */,
+				44BB757A28D05C0B1909800965FA6B77 /* MessageCollectionViewCell.swift */,
+				094C242AAEA8743E60AACA1E6171513B /* MessageContainerView.swift */,
+				4D2285B8240B75F7AAC980608648565D /* MessageContentCell.swift */,
+				68BB07CDA3E4AC6F86CB7D56A9102D2D /* MessageInputBar.swift */,
+				D4ED13B69AEB76D13472A885DFE3439F /* MessageInputBarDelegate.swift */,
+				3D87FDDC2956ECA4D878538FF70B76F0 /* MessageKind.swift */,
+				64F6E15304C523CACF95FCD05F04CC33 /* MessageKit+Availability.swift */,
+				79675442220487EE191565D2FE88B86F /* MessageKitDateFormatter.swift */,
+				A1F9A0835B419D72FF4FDF6A7182A612 /* MessageKitError.swift */,
+				8765E0DFF398C3FF635B587F3DC2A241 /* MessageLabel.swift */,
+				EC008F0138ED21611353615E56341BAA /* MessageLabelDelegate.swift */,
+				E479326DC2DD15DF667D60F4CFAF24E1 /* MessageReusableView.swift */,
+				CAD4AC6650DAD9E55A017ACB382D39CB /* MessagesCollectionView.swift */,
+				9E13D82B101F65FC2FC015C385950FE2 /* MessagesCollectionViewFlowLayout.swift */,
+				471E4AEC5D4D367D64B8445F65C2DC9A /* MessagesCollectionViewLayoutAttributes.swift */,
+				DD7CC0910C9408FAD2F1EB4693EFBCC0 /* MessagesDataSource.swift */,
+				79BA8ADBE828CB7B481A485A70049E29 /* MessagesDisplayDelegate.swift */,
+				4AB9D4ABE943DA78F1B15C1B0DE2467B /* MessageSizeCalculator.swift */,
+				4563D34A1E91211DAC740CDC5D16C199 /* MessagesLayoutDelegate.swift */,
+				E42697A817036BD00CEFA79391412CB8 /* MessageStyle.swift */,
+				09438649F43DE7A84D496A4675C70E6A /* MessagesViewController.swift */,
+				261698BC8A6941BAC2F79CFA5F5CB5A0 /* MessagesViewController+Keyboard.swift */,
+				980F811024D8898686FFB3ECD275FE95 /* MessagesViewController+Menu.swift */,
+				01B9BC5923A1271BB866E278233B723C /* MessageType.swift */,
+				4D2B4E5B6F5D8C66189E96D87679A230 /* NSAttributedString+Extensions.swift */,
+				C11E30511E80461195F026FAFC40D7F8 /* NSConstraintLayoutSet.swift */,
+				4FF8F2EEB74301D49AC4A94FC119F667 /* PlayButtonView.swift */,
+				CE37141031C63F0773462934F62F86AE /* Sender.swift */,
+				B12FA3DE269DC5F37EBEC363701EE2C5 /* SeparatorLine.swift */,
+				62D83BBEDDD34EFEDD1B6AFE175A09DB /* TextMessageCell.swift */,
+				0DCAEDE661C910A79DD58F1F99BEC22A /* TextMessageSizeCalculator.swift */,
+				E7D2395C06381098DC96981B608F9A2E /* UIColor+Extensions.swift */,
+				335013E3F739DD6DF3F3A0FADC082ECA /* UIEdgeInsets+Extensions.swift */,
+				00BB21DEE6DC04FE68C28AA3DC97D8D1 /* UIView+Extensions.swift */,
+				10169C2F4EB86CD0ACDF8ECD1C182711 /* Resources */,
+				702CE8B8E940E3FD0B3639E60FAB458A /* Support Files */,
+			);
+			name = MessageKit;
+			path = MessageKit;
+			sourceTree = "<group>";
+		};
+		986B2BB1D93357D34D043221D8688090 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				15A68A8F33BD9EB9AFD02465B0418BCF /* MessageKit.framework */,
+				D96170E673391D43B16AE39E7B2E3C33 /* MessageKitAssets.bundle */,
+				5C338E4EB217CE68881EA0F22A01E116 /* Pods_HeyThere.framework */,
+				D40233B0569623053318FB87CD55A0CF /* Pods_HeyThereTests.framework */,
+				5E832B8AD7A653E843032BDD6E4B4D08 /* Pods_HeyThereUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B9CD9B758918013B4287E9D67ADCD81A /* Pods-HeyThereTests */ = {
+			isa = PBXGroup;
+			children = (
+				9191EB9CE27D2282D903B28326C854FA /* Pods-HeyThereTests.modulemap */,
+				5FF610CA13D365CA5D5361C40A9EE823 /* Pods-HeyThereTests-acknowledgements.markdown */,
+				11577A90474DD019AD557EEB00C256AC /* Pods-HeyThereTests-acknowledgements.plist */,
+				8312CA73DD73E4B8F618632D98169E27 /* Pods-HeyThereTests-dummy.m */,
+				010B86F51D988120DABEADC8B2909FF8 /* Pods-HeyThereTests-Info.plist */,
+				DF74B6AEEFECF7A34783992BA19E06C2 /* Pods-HeyThereTests-umbrella.h */,
+				2EE1CD6E7D818AEDE1966DC61DB99970 /* Pods-HeyThereTests.debug.xcconfig */,
+				7DA2122CADD724CEBC29AC1110EB5DDB /* Pods-HeyThereTests.release.xcconfig */,
+			);
+			name = "Pods-HeyThereTests";
+			path = "Target Support Files/Pods-HeyThereTests";
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				240FF0A99F80878AB8CA2C0BA3B2050F /* Pods */,
+				986B2BB1D93357D34D043221D8688090 /* Products */,
+				F1E8B431019579B4656111AD0C25ED51 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF057934D6E8BFB220943A44FE6E7A60 /* Pods-HeyThere */ = {
+			isa = PBXGroup;
+			children = (
+				7C5791BA64C1BF153C97E32718B9A343 /* Pods-HeyThere.modulemap */,
+				89B5A1C5AF4E0420508E817350EE60E7 /* Pods-HeyThere-acknowledgements.markdown */,
+				A112E658EE29E91BD6B5C8D41A0F1A6E /* Pods-HeyThere-acknowledgements.plist */,
+				2B778716F2C3EFC6F6B54FF05E54BC8A /* Pods-HeyThere-dummy.m */,
+				0884D9A7351754FC9A90428E31905967 /* Pods-HeyThere-frameworks.sh */,
+				3E36A4DE3F4E9DC430B4DAC806E47AC8 /* Pods-HeyThere-Info.plist */,
+				C286453E829AAB1FAD55159677599B7B /* Pods-HeyThere-umbrella.h */,
+				2EE34BC60AA674D36B1806E7076F4B32 /* Pods-HeyThere.debug.xcconfig */,
+				9B22B1B597B3571514DAEC90FC939748 /* Pods-HeyThere.release.xcconfig */,
+			);
+			name = "Pods-HeyThere";
+			path = "Target Support Files/Pods-HeyThere";
+			sourceTree = "<group>";
+		};
+		F1E8B431019579B4656111AD0C25ED51 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EF057934D6E8BFB220943A44FE6E7A60 /* Pods-HeyThere */,
+				B9CD9B758918013B4287E9D67ADCD81A /* Pods-HeyThereTests */,
+				545D0590563CE7BCC150399D8CB70A74 /* Pods-HeyThereUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3E5ED36F832D9F0362A07BB8E04CCB25 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31158B2399A840A56B519E8817F397FB /* MessageKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D96FF0768C1339BF5DE36CEF5DAD2D8C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D5FD8CCE7C3C00B2CE8F934EC710B5E /* Pods-HeyThereUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2203C1AE41C639811CA45E10CE16139 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F1BB586ADCEC4D252929A9B7E1E5B7C /* Pods-HeyThere-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F366648714F7A98525EF7590E672C9DC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C124EEC7442A90B5166EDC14DCADD598 /* Pods-HeyThereTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2D834CBBD351637528FA6B93E42745DC /* MessageKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2C26C2D133A85EC8DCB761BB29BDE1B /* Build configuration list for PBXNativeTarget "MessageKit" */;
+			buildPhases = (
+				3E5ED36F832D9F0362A07BB8E04CCB25 /* Headers */,
+				BBB376BF481E2B16A8A4DD9A917CB811 /* Sources */,
+				74B154CBA69779ECE487859AED290B35 /* Frameworks */,
+				CD68BF3C8836F0B886EBB903BC8EB7AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D30785CD6FFA3C70AD3DBD534395433C /* PBXTargetDependency */,
+			);
+			name = MessageKit;
+			productName = MessageKit;
+			productReference = 15A68A8F33BD9EB9AFD02465B0418BCF /* MessageKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3AFB3BF56265EE8DB3B23F437636260F /* Pods-HeyThere */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 458A12822A517100D97C2CCD79F3487A /* Build configuration list for PBXNativeTarget "Pods-HeyThere" */;
+			buildPhases = (
+				E2203C1AE41C639811CA45E10CE16139 /* Headers */,
+				94BF885DE975055C942E90DB449F9EC4 /* Sources */,
+				E02A6561B17EC657EC20A12D24CCDD7B /* Frameworks */,
+				FE69749E53C1AAC95D41FDCD0E6237CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EAD29EB7575F0D099B3447C62F8F505E /* PBXTargetDependency */,
+			);
+			name = "Pods-HeyThere";
+			productName = "Pods-HeyThere";
+			productReference = 5C338E4EB217CE68881EA0F22A01E116 /* Pods_HeyThere.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A354A684FCD5A41FA94AC4F993F83A7F /* Pods-HeyThereTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25C0D9AAC7BCF83ECA01FF3C45F280C4 /* Build configuration list for PBXNativeTarget "Pods-HeyThereTests" */;
+			buildPhases = (
+				F366648714F7A98525EF7590E672C9DC /* Headers */,
+				FBCA85AE8288E0D738FA61CAFA89B2D5 /* Sources */,
+				B0736CAAC96A73678F3361B899717BA6 /* Frameworks */,
+				695DC85DD4522F104717C41B96EE5908 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EDDE66B9693C3AA6124DE4F7EC36E778 /* PBXTargetDependency */,
+			);
+			name = "Pods-HeyThereTests";
+			productName = "Pods-HeyThereTests";
+			productReference = D40233B0569623053318FB87CD55A0CF /* Pods_HeyThereTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DC2A0F6973C1122AEE80B19C4B34D4D6 /* MessageKit-MessageKitAssets */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED67D6123B842EAADC8A1CE1F6C4B0A4 /* Build configuration list for PBXNativeTarget "MessageKit-MessageKitAssets" */;
+			buildPhases = (
+				BC3A1936D82FDFC412175319CF218161 /* Sources */,
+				910BD8D838A701E0B64C010C68C376B4 /* Frameworks */,
+				6ACCA54666B83A8EDDE73606D1ECA1EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MessageKit-MessageKitAssets";
+			productName = "MessageKit-MessageKitAssets";
+			productReference = D96170E673391D43B16AE39E7B2E3C33 /* MessageKitAssets.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		F6DE4A1CE8A79B84661B1C347A65B86F /* Pods-HeyThereUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64CD36E77BA29436BFB62EE7D390369D /* Build configuration list for PBXNativeTarget "Pods-HeyThereUITests" */;
+			buildPhases = (
+				D96FF0768C1339BF5DE36CEF5DAD2D8C /* Headers */,
+				6993C95145C97A131E66307A10092535 /* Sources */,
+				336A443EF0C7854D510E004CB043C05A /* Frameworks */,
+				00E39FB006E4AD5C1A3BAB03B74489FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A76C675434A0706BE6F1316413DE7E5E /* PBXTargetDependency */,
+			);
+			name = "Pods-HeyThereUITests";
+			productName = "Pods-HeyThereUITests";
+			productReference = 5E832B8AD7A653E843032BDD6E4B4D08 /* Pods_HeyThereUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 986B2BB1D93357D34D043221D8688090 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2D834CBBD351637528FA6B93E42745DC /* MessageKit */,
+				DC2A0F6973C1122AEE80B19C4B34D4D6 /* MessageKit-MessageKitAssets */,
+				3AFB3BF56265EE8DB3B23F437636260F /* Pods-HeyThere */,
+				A354A684FCD5A41FA94AC4F993F83A7F /* Pods-HeyThereTests */,
+				F6DE4A1CE8A79B84661B1C347A65B86F /* Pods-HeyThereUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00E39FB006E4AD5C1A3BAB03B74489FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		695DC85DD4522F104717C41B96EE5908 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6ACCA54666B83A8EDDE73606D1ECA1EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E49AF9F3D96741E6DCE67C313C5424ED /* Images in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD68BF3C8836F0B886EBB903BC8EB7AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11FD777658D285B5DBCAD74971D969E0 /* MessageKitAssets.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE69749E53C1AAC95D41FDCD0E6237CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6993C95145C97A131E66307A10092535 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1913A38D89307EFF07A928D799A478B3 /* Pods-HeyThereUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94BF885DE975055C942E90DB449F9EC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AF9926F3183C9D89D2D3A60DC9D3997 /* Pods-HeyThere-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBB376BF481E2B16A8A4DD9A917CB811 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F025D41E4CB2C3B08E9AE2FFA62923C1 /* Avatar.swift in Sources */,
+				B2F1142774BD8CFCAA9264055441CE8B /* AvatarPosition.swift in Sources */,
+				1A8E742AEA52A5A9CB2F3EBFAECAEE8F /* AvatarView.swift in Sources */,
+				F6887D8399838F0C011075971BAA985C /* Bundle+Extensions.swift in Sources */,
+				742BDDFCBE92D809B60D939AA24F099D /* CellSizeCalculator.swift in Sources */,
+				2D847B77B0F7A33E0FCBDEFF5860917D /* CGRect+Extensions.swift in Sources */,
+				5804FD194F264BB0063140F58D2EDE50 /* DetectorType.swift in Sources */,
+				7029A9230854B6AA5106D7E9FBB3557F /* InputBarItem.swift in Sources */,
+				70B2884AEC6124AFB51909F7ED088A41 /* InputStackView.swift in Sources */,
+				4233FFEBCEF3EA69F727F2952572FE76 /* InputTextView.swift in Sources */,
+				43BF39CC22993F4A1B36B82DEDB60239 /* InsetLabel.swift in Sources */,
+				5A73EEECFB699E1E9EBFEB1FDE8C5CA1 /* LabelAlignment.swift in Sources */,
+				92CA647E5D8C1105CFF78003F25097B4 /* LocationItem.swift in Sources */,
+				11FEC7CC91DBA4BBBC334F3D79C1EA7F /* LocationMessageCell.swift in Sources */,
+				F967419D8EDB333D9066A22FC0E920EE /* LocationMessageSizeCalculator.swift in Sources */,
+				17B5A86A90569553A8A56710A6137110 /* LocationMessageSnapshotOptions.swift in Sources */,
+				79052B844571044056AFA01CC48DA4A0 /* MediaItem.swift in Sources */,
+				A1C4A1389990EDED255FE7EF7A62756B /* MediaMessageCell.swift in Sources */,
+				50DD889E5E8E0D59E8B8911F042F1B27 /* MediaMessageSizeCalculator.swift in Sources */,
+				4DCFC07F57DD548CF6EA50205CE72679 /* MessageCellDelegate.swift in Sources */,
+				D866815D4DD5976F6ED7B4D10B73A910 /* MessageCollectionViewCell.swift in Sources */,
+				E7CE2ECD7A5022498B674A9F79275CDA /* MessageContainerView.swift in Sources */,
+				A13B19DE719038E734E8F5D5B0396DB3 /* MessageContentCell.swift in Sources */,
+				CDA8E6F1993F3B8DF7C63C37D5C271B2 /* MessageInputBar.swift in Sources */,
+				F250A25F99B489FFA570F775451FFF76 /* MessageInputBarDelegate.swift in Sources */,
+				7EFCFE1D72F795362F0FE36E7561C607 /* MessageKind.swift in Sources */,
+				3A7FC20D51E8C1B03B63B687EAB978FB /* MessageKit+Availability.swift in Sources */,
+				EF7725D39E3D4A062F36B8E61E661A05 /* MessageKit-dummy.m in Sources */,
+				564BBEEE9BFBC87BD9C15C3680D64EBA /* MessageKitDateFormatter.swift in Sources */,
+				81AECB0270489425CCE8B9725D469DDA /* MessageKitError.swift in Sources */,
+				84E1A6ABCA0F5350F7E05F1CCA94EEB5 /* MessageLabel.swift in Sources */,
+				43907A866FCA9F3677A7843B86556463 /* MessageLabelDelegate.swift in Sources */,
+				71C44689E15DD1A6F67B53F5C63A0A73 /* MessageReusableView.swift in Sources */,
+				C7426BC67487F096343D9889523F7F35 /* MessagesCollectionView.swift in Sources */,
+				90EDC601E8A181514D454C67B71EF852 /* MessagesCollectionViewFlowLayout.swift in Sources */,
+				616851ABD2D0FD4D71392F104B1DC4C1 /* MessagesCollectionViewLayoutAttributes.swift in Sources */,
+				EB5D7FE2008A2964422D0EC66E492780 /* MessagesDataSource.swift in Sources */,
+				D3F5021F8263B99EC6C6F2E1B64D2497 /* MessagesDisplayDelegate.swift in Sources */,
+				35740381735274723A99E8980672AD28 /* MessageSizeCalculator.swift in Sources */,
+				FFB55BC707BDFAFEB0ADA7EFD30DA570 /* MessagesLayoutDelegate.swift in Sources */,
+				D5750E8BF6501D63CC0C01AA9BD0F7B0 /* MessageStyle.swift in Sources */,
+				764B32895B2AA62CE6F82807F3DD2279 /* MessagesViewController+Keyboard.swift in Sources */,
+				D59C59D2F932067D341128F0DAB81401 /* MessagesViewController+Menu.swift in Sources */,
+				186F90A5E3814EA338CB06B75FBBF321 /* MessagesViewController.swift in Sources */,
+				A4207FD10528CE2EB1B6A80F1AC947B2 /* MessageType.swift in Sources */,
+				C27190DCB77EAE9C77B21F2E2E760313 /* NSAttributedString+Extensions.swift in Sources */,
+				31CE525D6CEEDC7C15F02FF6DFC094BC /* NSConstraintLayoutSet.swift in Sources */,
+				E6CE3E8E99B802C347F997A12DBD71F7 /* PlayButtonView.swift in Sources */,
+				67045AA7D72F2EE1F8528777E942B6F4 /* Sender.swift in Sources */,
+				375E2BC5797921B4E5E6D02D143CDF4B /* SeparatorLine.swift in Sources */,
+				554382AA3FE616F43A1D5884B4B88A28 /* TextMessageCell.swift in Sources */,
+				E7B881D9A1910980F5A5641FA605C766 /* TextMessageSizeCalculator.swift in Sources */,
+				59CC0B0C263EE7571F6CBC4B4CF57AF9 /* UIColor+Extensions.swift in Sources */,
+				3F6471B22A184EDC18A202295A0CF879 /* UIEdgeInsets+Extensions.swift in Sources */,
+				87EC1A62E520AD90B15D447FE6984688 /* UIView+Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC3A1936D82FDFC412175319CF218161 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBCA85AE8288E0D738FA61CAFA89B2D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C741E78E74CC2AD4472F44C4D8C4C6FA /* Pods-HeyThereTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A76C675434A0706BE6F1316413DE7E5E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-HeyThere";
+			target = 3AFB3BF56265EE8DB3B23F437636260F /* Pods-HeyThere */;
+			targetProxy = 32ED170350E84DC9DAD7154B9D27E8E8 /* PBXContainerItemProxy */;
+		};
+		D30785CD6FFA3C70AD3DBD534395433C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "MessageKit-MessageKitAssets";
+			target = DC2A0F6973C1122AEE80B19C4B34D4D6 /* MessageKit-MessageKitAssets */;
+			targetProxy = 877681A2784CDF3A631778C3E6416948 /* PBXContainerItemProxy */;
+		};
+		EAD29EB7575F0D099B3447C62F8F505E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MessageKit;
+			target = 2D834CBBD351637528FA6B93E42745DC /* MessageKit */;
+			targetProxy = 77D56BBC6FE21648AF8A86F3B84232B6 /* PBXContainerItemProxy */;
+		};
+		EDDE66B9693C3AA6124DE4F7EC36E778 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-HeyThere";
+			target = 3AFB3BF56265EE8DB3B23F437636260F /* Pods-HeyThere */;
+			targetProxy = 8FE3964CCA544AE2CE9D06BAA98B1FBA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1422B121EAEAEA11307496903FA623C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		1C3E759B300B0F7F9D39D845D6CBEC7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 787E5876C3018AEF4EE37530E0C213A3 /* MessageKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/MessageKit";
+				INFOPLIST_FILE = "Target Support Files/MessageKit/ResourceBundle-MessageKitAssets-MessageKit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = MessageKitAssets;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		261D71F0023D82032F9E7069D8322D00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B22B1B597B3571514DAEC90FC939748 /* Pods-HeyThere.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HeyThere/Pods-HeyThere-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HeyThere/Pods-HeyThere.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		60B260D817AFD4C14A6635BFC4FE69A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EE1CD6E7D818AEDE1966DC61DB99970 /* Pods-HeyThereTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HeyThereTests/Pods-HeyThereTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HeyThereTests/Pods-HeyThereTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		84409435DA4F58BA6F2EC837AC632D8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F06AA274684F4F81AFA2C80182DA7306 /* Pods-HeyThereUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HeyThereUITests/Pods-HeyThereUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HeyThereUITests/Pods-HeyThereUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C91E925354266BD807A90CAB738FD906 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F506A7BE0CB6C92D334D40DCCBC627C2 /* Pods-HeyThereUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HeyThereUITests/Pods-HeyThereUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HeyThereUITests/Pods-HeyThereUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CA8E8C69C4C4755B6D7CB228D03D7508 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 787E5876C3018AEF4EE37530E0C213A3 /* MessageKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/MessageKit";
+				INFOPLIST_FILE = "Target Support Files/MessageKit/ResourceBundle-MessageKitAssets-MessageKit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = MessageKitAssets;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		D6324C84565B8E22185C429E1A7139AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EE34BC60AA674D36B1806E7076F4B32 /* Pods-HeyThere.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HeyThere/Pods-HeyThere-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HeyThere/Pods-HeyThere.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D6780AE605F0552C7597E9F5F6CC267D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DA2122CADD724CEBC29AC1110EB5DDB /* Pods-HeyThereTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HeyThereTests/Pods-HeyThereTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HeyThereTests/Pods-HeyThereTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		ED7888FA6713EABBF66D26A8003AD1CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		EFAB9A5FDF791350113A081F4234C76B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 787E5876C3018AEF4EE37530E0C213A3 /* MessageKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MessageKit/MessageKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MessageKit/MessageKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/MessageKit/MessageKit.modulemap";
+				PRODUCT_MODULE_NAME = MessageKit;
+				PRODUCT_NAME = MessageKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F98A67E760D8EE787128A6CE071F239A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 787E5876C3018AEF4EE37530E0C213A3 /* MessageKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MessageKit/MessageKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MessageKit/MessageKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/MessageKit/MessageKit.modulemap";
+				PRODUCT_MODULE_NAME = MessageKit;
+				PRODUCT_NAME = MessageKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		25C0D9AAC7BCF83ECA01FF3C45F280C4 /* Build configuration list for PBXNativeTarget "Pods-HeyThereTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60B260D817AFD4C14A6635BFC4FE69A0 /* Debug */,
+				D6780AE605F0552C7597E9F5F6CC267D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		458A12822A517100D97C2CCD79F3487A /* Build configuration list for PBXNativeTarget "Pods-HeyThere" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6324C84565B8E22185C429E1A7139AB /* Debug */,
+				261D71F0023D82032F9E7069D8322D00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED7888FA6713EABBF66D26A8003AD1CA /* Debug */,
+				1422B121EAEAEA11307496903FA623C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64CD36E77BA29436BFB62EE7D390369D /* Build configuration list for PBXNativeTarget "Pods-HeyThereUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C91E925354266BD807A90CAB738FD906 /* Debug */,
+				84409435DA4F58BA6F2EC837AC632D8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2C26C2D133A85EC8DCB761BB29BDE1B /* Build configuration list for PBXNativeTarget "MessageKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFAB9A5FDF791350113A081F4234C76B /* Debug */,
+				F98A67E760D8EE787128A6CE071F239A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED67D6123B842EAADC8A1CE1F6C4B0A4 /* Build configuration list for PBXNativeTarget "MessageKit-MessageKitAssets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C3E759B300B0F7F9D39D845D6CBEC7F /* Debug */,
+				CA8E8C69C4C4755B6D7CB228D03D7508 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
