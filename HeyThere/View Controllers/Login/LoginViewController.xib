@@ -41,6 +41,9 @@
                             <state key="normal" title="Login">
                                 <color key="titleColor" red="0.0098901915129999997" green="0.021150286559999999" blue="0.097596763959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
+                            <connections>
+                                <action selector="loginButtonTapped:" destination="-1" eventType="touchUpInside" id="0nE-kK-39U"/>
+                            </connections>
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hey There" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gxZ-NU-DVh">
                             <rect key="frame" x="100" y="309.5" width="214" height="51.5"/>
@@ -55,6 +58,9 @@
                             <state key="normal" title="Sign Up">
                                 <color key="titleColor" red="0.0098901915129999997" green="0.021150286559999999" blue="0.097596763959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
+                            <connections>
+                                <action selector="signUpButtonTapped:" destination="-1" eventType="touchUpInside" id="17F-a7-smi"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

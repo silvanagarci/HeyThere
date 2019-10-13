@@ -12,8 +12,10 @@ import MessageKit
 class ChatViewController: MessagesViewController {
     let dispatchGroup =  DispatchGroup()
     var messages: [Message] = []
-    var currentUser = Sender(id: "0", displayName: "Nova")
-    var otherUser = Sender(id: "1", displayName: "he")
+    var username = kEmptyString
+    let chatRoom = ChatRoom()
+    
+    var currentUser = Sender(id: "0", displayName: "User 1")
 
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -23,7 +25,20 @@ class ChatViewController: MessagesViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureVC()
-
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        chatRoom.setupConnectionSocket()
+        chatRoom.enterChat(username: kEmptyString)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        chatRoom.closeStreams()
+    }
+    
+    func addMessage(message: Message) {
+         messages.append(message)
     }
     
     /**
@@ -42,6 +57,7 @@ class ChatViewController: MessagesViewController {
         }
         messagesCollectionView.reloadData()
         messagesCollectionView.scrollToBottom(animated: true)
+        chatRoom.delegate = self
     }
  
     /**
@@ -106,6 +122,8 @@ extension ChatViewController: MessagesLayoutDelegate {
 
 extension ChatViewController: MessagesDisplayDelegate {
     func backgroundColor(for message: MessageType, at indexPath: IndexPath, in messagesCollectionView: MessagesCollectionView) -> UIColor {
+        let kSenderColor = UIColor(red: 85/255.0, green: 136/255.0, blue: 225/255.0, alpha: 1)
+        let kReceiverColor = UIColor(red: 245/255.0, green: 94/255.0, blue: 97/255.0, alpha: 0.5)
         return isFromCurrentSender(message: message) ? kSenderColor : kReceiverColor
     }
     
@@ -128,4 +146,9 @@ extension ChatViewController: MessageInputBarDelegate {
         
         
     }
+}
+extension ChatViewController: ChatRoomDelegate {
+    func messageReceived(message: Message) {
+        addMessage(message: message)
+  }
 }

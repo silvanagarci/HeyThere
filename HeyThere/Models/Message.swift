@@ -13,12 +13,14 @@ struct Message {
     let messageId: String
     let sender: Sender
     let text: String
+    let username: String
 
     
-    init(sender: Sender, messageId: String,text: String) {
+    init(sender: Sender, messageId: String,text: String, username: String) {
         self.sender = sender
         self.text = text
         self.messageId = messageId
+        self.username = username
     }
 }
 
