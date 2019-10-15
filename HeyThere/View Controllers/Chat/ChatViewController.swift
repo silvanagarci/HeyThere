@@ -13,7 +13,8 @@ class ChatViewController: MessagesViewController {
     let dispatchGroup =  DispatchGroup()
     var messages: [Message] = []
     var username = kEmptyString
-    let chatRoom = ChatRoom()
+    var password = kEmptyString
+    let chatRoom = Conversation()
     
     var currentUser = Sender(id: "0", displayName: "User 1")
 
@@ -30,7 +31,7 @@ class ChatViewController: MessagesViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         chatRoom.setupConnectionSocket()
-        chatRoom.enterChat(username: kEmptyString)
+        chatRoom.enterChat(username_text: username, password_text: password)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -38,7 +39,9 @@ class ChatViewController: MessagesViewController {
     }
     
     func addMessage(message: Message) {
-         messages.append(message)
+        messages.append(message)
+        self.messagesCollectionView.reloadData()
+        self.messagesCollectionView.scrollToBottom(animated: true)
     }
     
     /**
@@ -144,10 +147,15 @@ extension ChatViewController: MessageInputBarDelegate {
         _ inputBar: MessageInputBar,
         didPressSendButtonWith text: String) {
         
+        chatRoom.sendToOutputStream(message: text)
+        let messageSender = Sender(id: "0", displayName: username)
+        let messageObject = Message(sender: messageSender, messageId: "0", text: text, username: username)
+        addMessage(message: messageObject)
+        inputBar.inputTextView.text = ""
         
     }
 }
-extension ChatViewController: ChatRoomDelegate {
+extension ChatViewController: ConversationDelegate {
     func messageReceived(message: Message) {
         addMessage(message: message)
   }

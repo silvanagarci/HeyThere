@@ -10,16 +10,17 @@ import Foundation
 import UIKit
 import MessageKit
 
-protocol ChatRoomDelegate: class {
+protocol ConversationDelegate: class {
     func messageReceived(message: Message)
     
 }
 
 class Conversation: NSObject {
-    weak var delegate: ChatRoomDelegate?
+    weak var delegate: ConversationDelegate?
     var inputStream: InputStream!
     var outputStream: OutputStream!
     var username = kEmptyString
+    var password = kEmptyString
     var host = "164.107.113.65"
     let port = 1025
 
@@ -29,9 +30,15 @@ class Conversation: NSObject {
         outputStream.close()
     }
     
-    func enterChat(username: String) {
-        self.username = username
-        let data = "\(username)".data(using: .utf8)!
+    func enterChat(username_text: String, password_text: String) {
+        self.username = username_text
+        self.password = password_text
+        let message = "USER \(username_text) \(password_text)"
+        let data = message.data(using: .utf8)!
+        print(message)
+        print(username)
+        print(password)
+        print(data)
         
         _ = data.withUnsafeBytes {
         guard let pointer = $0.baseAddress?.assumingMemoryBound(to: UInt8.self) else {
@@ -45,11 +52,11 @@ class Conversation: NSObject {
  }
     
     func readInputStream(stream: InputStream) {
-        let buffer = UnsafeMutablePointer<UInt8>.allocate(capacity: 4096)
+        let buffer = UnsafeMutablePointer<UInt8>.allocate(capacity: 1024)
         
         var numberBytes  = 0
         while stream.hasBytesAvailable {
-            numberBytes = stream.read(buffer, maxLength: 4096)
+            numberBytes = stream.read(buffer, maxLength: 1024)
         }
         
         guard let stringMessage = String(bytesNoCopy: buffer, length: numberBytes, encoding: .utf8,freeWhenDone: true)?.components(separatedBy: ""),
@@ -67,7 +74,7 @@ class Conversation: NSObject {
     }
     
     func sendToOutputStream(message: String) {
-        let data = "\(message)".data(using: .utf8)!
+        let data = "TEXT  \(message)".data(using: .utf8)!
         
         _ = data.withUnsafeBytes {
         guard let pointer = $0.baseAddress?.assumingMemoryBound(to: UInt8.self) else {

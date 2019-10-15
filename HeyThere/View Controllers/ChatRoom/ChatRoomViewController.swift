@@ -13,7 +13,7 @@ class ChatRoomViewController: UIViewController {
         
     @IBOutlet weak var tableView: UITableView!
     
-    let chatRoom = ChatRoom()
+    let chatRoom = Conversation()
 
     override func viewDidLoad() {
         super.viewDidLoad()

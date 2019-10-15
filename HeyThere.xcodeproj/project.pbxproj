@@ -20,7 +20,7 @@
 		B147CB1D234FB46C009DF2F9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B147CB1B234FB46C009DF2F9 /* LoginViewController.swift */; };
 		B147CB1E234FB46C009DF2F9 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B147CB1C234FB46C009DF2F9 /* LoginViewController.xib */; };
 		B147CB22234FB6F3009DF2F9 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = B147CB21234FB6F3009DF2F9 /* Message.swift */; };
-		B147CB25234FD7F2009DF2F9 /* ChatRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = B147CB24234FD7F2009DF2F9 /* ChatRoom.swift */; };
+		B147CB25234FD7F2009DF2F9 /* Conversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B147CB24234FD7F2009DF2F9 /* Conversation.swift */; };
 		B147CB28234FD8EF009DF2F9 /* ChatRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B147CB26234FD8EF009DF2F9 /* ChatRoomViewController.swift */; };
 		B147CB29234FD8EF009DF2F9 /* ChatRoomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B147CB27234FD8EF009DF2F9 /* ChatRoomViewController.xib */; };
 		B147CB5A2350EA25009DF2F9 /* General.swift in Sources */ = {isa = PBXBuildFile; fileRef = B147CB592350EA25009DF2F9 /* General.swift */; };
@@ -71,7 +71,7 @@
 		B147CB1B234FB46C009DF2F9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B147CB1C234FB46C009DF2F9 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		B147CB21234FB6F3009DF2F9 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
-		B147CB24234FD7F2009DF2F9 /* ChatRoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoom.swift; sourceTree = "<group>"; };
+		B147CB24234FD7F2009DF2F9 /* Conversation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conversation.swift; sourceTree = "<group>"; };
 		B147CB26234FD8EF009DF2F9 /* ChatRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomViewController.swift; sourceTree = "<group>"; };
 		B147CB27234FD8EF009DF2F9 /* ChatRoomViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatRoomViewController.xib; sourceTree = "<group>"; };
 		B147CB592350EA25009DF2F9 /* General.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = General.swift; sourceTree = "<group>"; };
@@ -238,7 +238,7 @@
 			isa = PBXGroup;
 			children = (
 				B147CB21234FB6F3009DF2F9 /* Message.swift */,
-				B147CB24234FD7F2009DF2F9 /* ChatRoom.swift */,
+				B147CB24234FD7F2009DF2F9 /* Conversation.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -482,7 +482,7 @@
 				B147CB28234FD8EF009DF2F9 /* ChatRoomViewController.swift in Sources */,
 				B147CB1D234FB46C009DF2F9 /* LoginViewController.swift in Sources */,
 				B147CAE8234FB3B7009DF2F9 /* ContentView.swift in Sources */,
-				B147CB25234FD7F2009DF2F9 /* ChatRoom.swift in Sources */,
+				B147CB25234FD7F2009DF2F9 /* Conversation.swift in Sources */,
 				B147CB22234FB6F3009DF2F9 /* Message.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

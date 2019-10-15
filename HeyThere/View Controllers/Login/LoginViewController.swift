@@ -38,7 +38,6 @@ class LoginViewController: UIViewController {
             
         } else {
             userDictionary[username] = password
-            navigateToChatRoomVC(username: username)
         }
     }
     
@@ -69,18 +68,18 @@ class LoginViewController: UIViewController {
     /**
      Navigate to ChatRoomVC
      */
-    func navigateToChatRoomVC(username: String) {
+    func navigateToChatRoomVC(username: String, password: String) {
         let chatVC = ChatViewController()
         chatVC.username = username
-        let navigationController = UINavigationController(rootViewController: ChatViewController())
-        
+        chatVC.password = password
+        let navigationController = UINavigationController(rootViewController: chatVC)        
         present(navigationController, animated: false, completion: nil)
     }
     
     func verifyUserCredentials(username: String, password: String) {
         if let storedPassword = userDictionary[username]{
             if storedPassword == password {
-                navigateToChatRoomVC(username: username)
+                navigateToChatRoomVC(username: username, password: storedPassword)
             }
             else {
                 let alertController = UIAlertController(title: "Incorrect Password", message: "Incorrect Pasword/Username" , preferredStyle: .alert)
