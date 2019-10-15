@@ -41,12 +41,9 @@ class LoginViewController: UIViewController {
         }
     }
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         configureVC()
-
-        // Do any additional setup after loading the view.
 
     }
     
@@ -69,10 +66,10 @@ class LoginViewController: UIViewController {
      Navigate to ChatRoomVC
      */
     func navigateToChatRoomVC(username: String, password: String) {
-        let chatVC = ChatViewController()
-        chatVC.username = username
-        chatVC.password = password
-        let navigationController = UINavigationController(rootViewController: chatVC)        
+        let chatRoomVC = ChatRoomViewController()
+        chatRoomVC.username = username
+        chatRoomVC.password = password
+        let navigationController = UINavigationController(rootViewController: chatRoomVC)
         present(navigationController, animated: false, completion: nil)
     }
     

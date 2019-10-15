@@ -11,7 +11,7 @@ import UIKit
 import MessageKit
 
 protocol ConversationDelegate: class {
-    func messageReceived(message: Message)
+    func messageReceived(message: String)
     
 }
 
@@ -66,15 +66,11 @@ class Conversation: NSObject {
             print("error occurred")
             return
         }
-         
-        let messageSender = Sender(id: "1", displayName: username)
-        let messageObject = Message(sender: messageSender, messageId: message, text: message, username: name)
-        
-        delegate?.messageReceived(message: messageObject)
+        delegate?.messageReceived(message: message)
     }
     
-    func sendToOutputStream(message: String) {
-        let data = "TEXT  \(message)".data(using: .utf8)!
+    func sendToOutputStream(message: String, receiver_username: String) {
+        let data = "TEXT \(receiver_username) \(message)".data(using: .utf8)!
         
         _ = data.withUnsafeBytes {
         guard let pointer = $0.baseAddress?.assumingMemoryBound(to: UInt8.self) else {

@@ -12,9 +12,9 @@ import MessageKit
 class ChatViewController: MessagesViewController {
     let dispatchGroup =  DispatchGroup()
     var messages: [Message] = []
-    var username = kEmptyString
-    var password = kEmptyString
-    let chatRoom = Conversation()
+    var receiver_username = kEmptyString
+    var sender_username = kEmptyString
+    let chat = Conversation()
     
     var currentUser = Sender(id: "0", displayName: "User 1")
 
@@ -30,12 +30,10 @@ class ChatViewController: MessagesViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        chatRoom.setupConnectionSocket()
-        chatRoom.enterChat(username_text: username, password_text: password)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
-        chatRoom.closeStreams()
+        chat.closeStreams()
     }
     
     func addMessage(message: Message) {
@@ -60,7 +58,7 @@ class ChatViewController: MessagesViewController {
         }
         messagesCollectionView.reloadData()
         messagesCollectionView.scrollToBottom(animated: true)
-        chatRoom.delegate = self
+        chat.delegate = self
     }
  
     /**
@@ -146,17 +144,19 @@ extension ChatViewController: MessageInputBarDelegate {
     func messageInputBar(
         _ inputBar: MessageInputBar,
         didPressSendButtonWith text: String) {
-        
-        chatRoom.sendToOutputStream(message: text)
-        let messageSender = Sender(id: "0", displayName: username)
-        let messageObject = Message(sender: messageSender, messageId: "0", text: text, username: username)
+        chat.sendToOutputStream(message: text, receiver_username: receiver_username)
+        let messageSender = Sender(id: "0", displayName: sender_username)
+        let messageObject = Message(sender: messageSender, messageId: "0", text: text, username: sender_username)
         addMessage(message: messageObject)
         inputBar.inputTextView.text = ""
         
     }
 }
 extension ChatViewController: ConversationDelegate {
-    func messageReceived(message: Message) {
-        addMessage(message: message)
+    
+    func messageReceived(message: String) {
+        let messageSender = Sender(id: "1", displayName: receiver_username)
+        let newMessage = Message(sender: messageSender, messageId: "0", text: message, username: receiver_username)
+        addMessage(message: newMessage)
   }
 }
