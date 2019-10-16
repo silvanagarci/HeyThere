@@ -10,13 +10,13 @@ import UIKit
 import MessageKit
 
 class ChatViewController: MessagesViewController {
+    
+    var conversation = Conversation()
+    var currentUser = Sender(id: "0", displayName: "User 1")
     let dispatchGroup =  DispatchGroup()
     var messages: [Message] = []
     var receiver_username = kEmptyString
     var sender_username = kEmptyString
-    let chat = Conversation()
-    
-    var currentUser = Sender(id: "0", displayName: "User 1")
 
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -33,7 +33,7 @@ class ChatViewController: MessagesViewController {
     }
     
     override func viewWillDisappear(_ animated: Bool) {
-        chat.closeStreams()
+        conversation.closeStreams()
     }
     
     func addMessage(message: Message) {
@@ -46,7 +46,7 @@ class ChatViewController: MessagesViewController {
      Configure VC
      */
     func configureVC() {
-        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Go Back", style: .plain, target: self, action: #selector(navigateToMenu))
+        navigationItem.hidesBackButton = true  
         messagesCollectionView.messagesDataSource = self
         messagesCollectionView.messagesLayoutDelegate = self
         messageInputBar.delegate = self
@@ -58,15 +58,25 @@ class ChatViewController: MessagesViewController {
         }
         messagesCollectionView.reloadData()
         messagesCollectionView.scrollToBottom(animated: true)
-        chat.delegate = self
+        conversation.delegate = self
     }
  
     /**
      Go back to menu
      */
-    @objc func navigateToMenu() {
-        let navigationController = UINavigationController(rootViewController: LoginViewController())
-        present(navigationController, animated: false, completion: nil)
+    @objc func navigateToLoginRoomVC() {
+        for controller in self.navigationController!.viewControllers as Array {
+            if controller.isKind(of: ChatRoomViewController.self) {
+                self.navigationController!.popToViewController(controller, animated: true)
+                break
+            }
+        }
+    }
+    /**
+     Go back
+     */
+    @objc func popVC() {
+        navigationController?.popViewController(animated: true)
     }
 }
 
@@ -144,7 +154,7 @@ extension ChatViewController: MessageInputBarDelegate {
     func messageInputBar(
         _ inputBar: MessageInputBar,
         didPressSendButtonWith text: String) {
-        chat.sendToOutputStream(message: text, receiver_username: receiver_username)
+        conversation.sendToOutputStream(message: text, receiver_username: receiver_username)
         let messageSender = Sender(id: "0", displayName: sender_username)
         let messageObject = Message(sender: messageSender, messageId: "0", text: text, username: sender_username)
         addMessage(message: messageObject)
@@ -152,8 +162,7 @@ extension ChatViewController: MessageInputBarDelegate {
         
     }
 }
-extension ChatViewController: ConversationDelegate {
-    
+extension ChatViewController: ConversationDelegate {    
     func messageReceived(message: String) {
         let messageSender = Sender(id: "1", displayName: receiver_username)
         let newMessage = Message(sender: messageSender, messageId: "0", text: message, username: receiver_username)

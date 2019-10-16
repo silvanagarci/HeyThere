@@ -116,3 +116,4 @@ extension Conversation: StreamDelegate {
     }
   }
 }
+

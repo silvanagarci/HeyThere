@@ -15,6 +15,10 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var signUpButton: UIButton!
     @IBOutlet weak var usernameTextField: UITextField!
     
+    let conversation = Conversation()
+    let dispatchGroup =  DispatchGroup()
+    var users_online = [String]()
+    
 
     @IBAction func loginButtonTapped(_ sender: Any) {
         //verify data user
@@ -44,6 +48,7 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureVC()
+        conversation.delegate = self
 
     }
     
@@ -52,6 +57,7 @@ class LoginViewController: UIViewController {
             signUpButton.layer.cornerRadius = 5
             let tapGesture = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard (_:)))
             self.view.addGestureRecognizer(tapGesture)
+            navigationItem.title = "Login"
     }
 
     /**
@@ -66,11 +72,22 @@ class LoginViewController: UIViewController {
      Navigate to ChatRoomVC
      */
     func navigateToChatRoomVC(username: String, password: String) {
-        let chatRoomVC = ChatRoomViewController()
-        chatRoomVC.username = username
-        chatRoomVC.password = password
-        let navigationController = UINavigationController(rootViewController: chatRoomVC)
-        present(navigationController, animated: false, completion: nil)
+        
+        dispatchGroup.enter()
+        conversation.setupConnectionSocket()
+        conversation.enterChat(username_text: username, password_text: password)
+        
+        
+        dispatchGroup.notify(queue: .main) {
+            print("done with connection socket")
+            let chatRoomVC = ChatRoomViewController()
+            chatRoomVC.username = username
+            chatRoomVC.password = password
+            chatRoomVC.conversation = self.conversation
+            chatRoomVC.client_list = self.users_online
+            let navigationController = UINavigationController(rootViewController: chatRoomVC)
+            self.present(navigationController, animated: false, completion: nil)
+        }
     }
     
     func verifyUserCredentials(username: String, password: String) {
@@ -88,4 +105,10 @@ class LoginViewController: UIViewController {
         }
     }
 
+}
+extension LoginViewController: ConversationDelegate {
+  func messageReceived(message: String) {
+    users_online = message.split(separator: " ").map{ String($0) }
+    dispatchGroup.leave()
+    }
 }

@@ -14,15 +14,13 @@ class ChatRoomViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     var client_list = [String]()
-    let conversation = Conversation()
     var password = kEmptyString
     var username = kEmptyString
+    var conversation = Conversation()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        conversation.setupConnectionSocket()
-        conversation.enterChat(username_text: username, password_text: password)
         configureVC()
     }
     
@@ -30,16 +28,25 @@ class ChatRoomViewController: UIViewController {
         navigationItem.title = "Users Online"
         tableView.dataSource = self
         tableView.delegate = self
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cellIdentifier")
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Go Back", style: .plain, target: self, action: #selector(dismissVC))
     }
+    /**
+     Go back
+     */
+    @objc func dismissVC() {
+        navigationController?.dismiss(animated: true, completion: nil)
+    }
+
 }
 
 extension ChatRoomViewController : UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return client_list.count
+        return client_list.count - 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell") as! UITableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cellIdentifier") as! UITableViewCell
         cell.textLabel?.text = client_list[indexPath.row]
         return cell
     }
@@ -54,8 +61,8 @@ extension ChatRoomViewController : UITableViewDelegate {
         let chatVC = ChatViewController()
         chatVC.receiver_username = client_list[indexPath.row]
         chatVC.sender_username = username
-        navigationController?.pushViewController(chatVC, animated: true)
-        
+        chatVC.conversation = conversation
+        navigationController?.pushViewController(chatVC, animated: true)        
     }
     
 }
